@@ -1,0 +1,985 @@
+.Header{
+    background-color: #f3e5e4;
+    padding: 50px 100px;
+}
+
+.titulo{
+    text-shadow: 2px 2px 2px  #ff0000;
+    text-align: center;
+    background-color: gray;
+}
+
+.imagem_header{
+    top: 10px;
+    position: relative;
+    left: 5px;
+    margin-bottom: 60px;
+    width: 20%;
+}
+
+.navegacao{
+    background-color: #ec5a5a;
+    position: absolute;
+    padding: 30px 100px;
+    margin-left: -100px;
+    width: 100%;
+}
+
+
+
+.btn_buscar{
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    padding: 8px 3px 5px 5px; 
+    top: 81px;
+    left: 1501px;
+    background-color: #ec5a5a;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_buscar:hover {
+
+    padding: 8px 3px 5px 5px; 
+  
+    background: #ff0000;
+  
+    color: #000000;
+  
+    border-radius: 4px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_buscar:not(:hover) {
+
+   
+    padding: 8px 3px 5px 5px; 
+
+  
+    color: #000000;
+  
+    border-radius: 4px;
+  
+    transition: 1s;
+}
+
+.btn_menu_header{
+    border: none;
+    border-radius: 50px;
+    padding: 3px 3px 3px 3px;
+    top: 82px;
+    position: absolute;
+    right: 310px;
+    font-size: 28px;
+    right: 180px;
+
+}
+
+.btn_menu_header:hover {
+
+    border-radius: 10px;
+  
+    background: #ff0d00;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_menu_header:not(:hover) {
+
+    border-radius: 10px;
+  
+
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.btn_menu_header2{
+    border: none;
+    border-radius: 50px ;
+    padding: 3px 3px 3px 3px;
+    top: 82px;
+    position: absolute;
+    right: 230px;
+    font-size: 30px;
+    right: 110px;
+}
+
+.btn_menu_header2:hover {
+
+    padding: 3px 3px 3px 3px;
+
+    border-radius: 10px;
+  
+    background: #ff0d00;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_menu_header2:not(:hover) {
+
+    border-radius: 10px;
+  
+
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+#input_buscar{
+    position: absolute;
+    top: 80px;
+    color: rgb(180, 178, 178);
+    border-radius: 5px;
+    border-color: #ff000062;
+    width: 400px;
+    height: 35px;
+    margin-left: 700px;
+    margin-right: 250px;
+}
+
+.menu_header{
+    margin-left: 800px;
+}
+
+.menu_header li{
+    list-style-type: none;
+}
+
+.menu_generos_principal{
+    background-color: #ec5a5a;
+
+
+}
+
+.menu_generos{
+    position: absolute;
+    top: -10px;
+    left: 250px;
+}
+
+.menu_generos li{
+    list-style-type: none;
+}
+
+.btn_categorias{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #f3e5e4;
+    left: 50px;
+    position: absolute;
+    top: 16px;
+    cursor: pointer;
+}
+
+.btn_categorias:hover {
+
+    border-radius: 10px;
+  
+    background: #d6d3d3;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_categorias:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.barra_quase_transparente{
+    position: absolute;
+    border-left: 2px solid #f3e5e488; /* Barra quase transparente */
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-left: 190px; /* Ajuste o espaçamento conforme necessário */
+    margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
+    margin-top: -20px;
+    width: 30px;
+}
+
+.menu_toggle{
+    position: relative;
+}
+
+.menu_nav_categorias li{
+    position: relative;
+    padding: 10px 10px;
+}
+
+.menu_nav_categorias.ativo{
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+.btn_generos{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #f3e5e4;
+    cursor: pointer;
+}
+
+.btn_generos:hover {
+
+    border-radius: 10px;
+  
+    background: #d6d3d3;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_generos:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.menu_categorias{
+    margin-left: -60px;
+    margin-right: -100px;
+}
+
+.menu_categorias ul{
+    list-style-type: none;
+}
+
+.menu_categorias li{
+    padding: 8px 5px;
+    background-color: #ec5a5a;
+    margin-right: 100px;
+}
+
+#carousel {
+    top: 50px;
+    width: 1300px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+#carousel img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#botoes-carousel {
+    position: absolute;
+    top: 830px;
+    right: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#botoes-carousel button {
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(236, 90, 90) ;
+    margin: 0 5px;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+#botoes-carousel button:hover {
+
+    border-radius: 10px;
+  
+    background-color: #f3e5e4;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+#botoes-carousel button:not(:hover) {
+
+    border-radius: 10px;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.menu_name{
+margin-top: 0px;
+
+    margin-left: 1px;
+
+    position: relative;
+  
+    background-color: #12855900;
+  
+    padding: 4px 60px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 10px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    cursor:default;
+}
+
+.btn_home_marcas{
+    position: relative;
+
+    background-color: #64128500;
+  
+    padding: 2.5px 5px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 7px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+}
+
+.btn_home_marcas:hover{
+    background-color:#f3e5e454 ;
+}
+
+.btn_home_modelos{
+    position: relative;
+
+    background-color: #64128500;
+  
+    padding: 2.5px 5px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 7px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+}
+
+.btn_home_modelos:hover{
+    background-color:#f3e5e454 ;
+}
+
+.btn_home_acessorios{
+    position: relative;
+
+    background-color: #64128500;
+  
+    padding: 2.5px 5px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 7px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+}
+
+.btn_home_acessorios:hover{
+    background-color:#f3e5e454 ;
+}
+
+.btn_home_infantil{
+    position: relative;
+
+    background-color: #64128500;
+  
+    padding: 2.5px 5px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 7px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+}
+
+.btn_home_infantil:hover{
+    background-color:#f3e5e454 ;
+}
+
+.btn_home_vertodos{
+    position: relative;
+
+    background-color: #64128500;
+  
+    padding: 2.5px 5px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 7px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+}
+
+.btn_home_vertodos:hover{
+    background-color:#f3e5e454 ;
+}
+
+.btn_home{
+    position: relative;
+
+    background-color: #64128500;
+  
+    padding: 2.5px 5px;
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+    
+    border-radius: 7px;
+  
+    letter-spacing: 1px;
+        
+    display: inline-block;
+}
+
+.btn_home:hover{
+    background-color:#f3e5e454 ;
+}
+
+.menu_nav{
+    height: 400px;
+
+    width: 200px;
+
+    position: absolute;
+
+    left: 63px;
+
+    top: 80px;
+
+    z-index: 9999;
+
+    background-color: #24242486;
+
+    color: #ffffff;
+
+    display: flex;
+
+    border-radius: 10px 10px 10px 10px;
+
+    user-select: none;
+
+    list-style: none;
+
+    opacity: 0;
+
+    visibility: hidden;
+}
+
+.menu_nav.ativo{
+    position: absolute;
+
+    height: 414px;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    background-color: #ec5a5a ;
+  }
+
+
+  .menu_nav.ativo:hover { 
+    transition: 1s;
+  
+  }
+  
+  .menu_nav.ativo:not(:hover){
+  
+    transition: 1s;
+  }
+
+
+.menu_nav:hover { 
+  transition: 1s;
+
+}
+
+.menu_nav:not(:hover){
+
+  transition: 1s;
+}
+
+.menu_nav .menu{
+  user-select: none;
+
+}
+
+.menu_nav .menu ul{
+  top: 80px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: wheat;
+
+  list-style: none;
+}
+
+/* menu_toggle */
+.menu_nav .menuToggle{  
+  position: relative;
+  
+  background-color: #000000;
+}
+
+.menu{
+    position: absolute;
+
+    top: 11px;
+
+    padding: 14px 68px 22px 26px;
+
+    margin-left: 2.5px;
+
+    align-items: center;
+
+    list-style: none;
+
+    margin-top: -10px;
+
+    background-color: #ec5a5a;
+
+    border-radius: 10px;
+
+    height: 382px;
+}
+
+
+/* menu_li */
+.menu_li{
+    margin-bottom: -5px;
+
+    font-size: 40px;
+
+    margin-left: -10px;
+}  
+
+.btn_categorias .menu_li:hover { 
+    transition: 1s;
+  
+}
+  
+.btn_categorias .menu_li:not(:hover){
+  
+    transition: 1s;
+}
+
+.footer{
+    position: absolute;
+    background-color:#ec5a5a ;
+    width: 100%;
+    height: 70px;
+    top: 1000px;
+}
+
+
+@media screen and (max-width: 1366px){
+
+    .Header{
+        width: 100%;
+    }
+
+    #input_buscar{
+        margin-left: 370px;
+    }
+
+    .btn_buscar{
+        position: absolute;
+        border: none;
+        font-size: 20px;
+        padding: 8px 3px 5px 5px; 
+        top: 82px;
+        left: 1122px;
+        background-color: #ec5a5a;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .btn_buscar:hover {
+    
+        padding: 8px 3px 5px 5px; 
+      
+        background: #ff0000;
+      
+        color: #000000;
+      
+        border-radius: 4px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .btn_buscar:not(:hover) {
+    
+       
+        padding: 8px 3px 5px 5px; 
+    
+      
+        color: #000000;
+      
+        border-radius: 4px;
+      
+        transition: 1s;
+    }
+    
+    #carousel {
+        top: 300px;
+        width: 1100px;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+        margin: auto;
+        margin-left: 150px;
+    }
+    
+    #carousel img {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #botoes-carousel {
+        position: absolute;
+        top: 830px;
+        right: 100px;
+        text-align: center;
+        top: 300px;
+
+    }
+
+    .btn_categorias{
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: none;
+        background: #f3e5e4;
+        left: 60px;
+        position: absolute;
+        top: 18px;
+        cursor: pointer;
+    }
+
+    .barra_quase_transparente{
+        position: absolute;
+        border-left: 2px solid #f3e5e488; /* Barra quase transparente */
+        height: 40px; /* Ajuste a altura conforme necessário */
+        margin-left: 201px; /* Ajuste o espaçamento conforme necessário */
+        margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
+        margin-top: -20px;
+        width: 30px;
+    }
+
+    .btn_generos{
+        
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: none;
+        background: #f3e5e4;
+        cursor: pointer;
+        left: 100px;
+    }
+    
+    .btn_generos:hover {
+    
+        border-radius: 10px;
+      
+        background: #d6d3d3;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .btn_generos:not(:hover) {
+    
+        border-radius: 10px;
+      
+        background: #f3e5e4;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+
+    .menu_generos{
+        position: absolute;
+        top: -10px;
+        left: 265px;
+    }
+    
+    .menu_generos li{
+        list-style-type: none;
+    }
+    
+    #botoes-carousel button {
+        border: none;
+        border-radius: 10px;
+        background-color:rgb(236, 90, 90) ;
+        margin: 0 5px;
+        padding: 8px 13px;
+        cursor: pointer;
+    }
+    
+    #botoes-carousel button:hover {
+    
+        border-radius: 10px;
+      
+        background-color: rgb(243, 229, 228);
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    #botoes-carousel button:not(:hover) {
+    
+        border-radius: 10px;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+
+    .btn_menu_header{
+        border: none;
+        border-radius: 50px;
+        padding: 3px 3px 3px 3px;
+        top: 82px;
+        position: absolute;
+        right: 110px;
+        font-size: 28px;
+    
+    }
+    
+    .btn_menu_header:hover {
+    
+        border-radius: 10px;
+      
+        background: #ff0d00;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .btn_menu_header:not(:hover) {
+    
+        border-radius: 10px;
+      
+    
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .btn_menu_header2{
+        border: none;
+        border-radius: 50px ;
+        padding: 3px 3px 3px 3px;
+        top: 82px;
+        position: absolute;
+        right: 40px;
+        font-size: 30px;
+    }
+    
+    .btn_menu_header2:hover {
+    
+        padding: 3px 3px 3px 3px;
+    
+        border-radius: 10px;
+      
+        background: #ff0d00;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .btn_menu_header2:not(:hover) {
+    
+        border-radius: 10px;
+      
+    
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+
+    .menu{
+        position: absolute;
+    
+        top: 11px;
+    
+        padding: 14px 68px 22px 26px;
+    
+        margin-left: 2.5px;
+    
+        align-items: center;
+    
+        list-style: none;
+    
+        margin-top: -10px;
+    
+        background-color: #ec5a5a;
+    
+        border-radius: 10px;
+    
+        height: 382px;
+    }
+}   
