@@ -34,7 +34,7 @@
     font-size: 20px;
     padding: 8px 3px 5px 5px; 
     top: 81px;
-    left: 1541px;
+    left: 1563px;
     background-color: #ec5a5a;
     border-radius: 4px;
     cursor: pointer;
@@ -75,7 +75,7 @@
     position: absolute;
     right: 310px;
     font-size: 28px;
-    right: 160px;
+    right: 230px;
 
 }
 
@@ -112,7 +112,7 @@
     padding: 3px 3px 3px 3px;
     top: 81px;
     position: absolute;
-    right: 230px;
+    right: 150px;
     font-size: 30px;
     right: 100px;
 }
@@ -320,7 +320,7 @@
 #botoes-carousel {
     position: absolute;
     top: 830px;
-    right: 250px;
+    right: 310px;
     text-align: center;
     margin-top: 10px;
 }
