@@ -1,6 +1,7 @@
 .Header{
     background-color: #f3e5e4;
     padding: 50px 100px;
+    width: 100%
 }
 
 .titulo{
@@ -21,7 +22,7 @@
     background-color: #ec5a5a;
     position: absolute;
     padding: 30px 100px;
-    margin-left: -100px;
+    left: 8px;
     width: 100%;
 }
 
@@ -33,7 +34,7 @@
     font-size: 20px;
     padding: 8px 3px 5px 5px; 
     top: 81px;
-    left: 1501px;
+    left: 1541px;
     background-color: #ec5a5a;
     border-radius: 4px;
     cursor: pointer;
@@ -70,11 +71,11 @@
     border: none;
     border-radius: 50px;
     padding: 3px 3px 3px 3px;
-    top: 82px;
+    top: 81px;
     position: absolute;
     right: 310px;
     font-size: 28px;
-    right: 180px;
+    right: 160px;
 
 }
 
@@ -109,11 +110,11 @@
     border: none;
     border-radius: 50px ;
     padding: 3px 3px 3px 3px;
-    top: 82px;
+    top: 81px;
     position: absolute;
     right: 230px;
     font-size: 30px;
-    right: 110px;
+    right: 100px;
 }
 
 .btn_menu_header2:hover {
