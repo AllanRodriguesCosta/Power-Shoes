@@ -757,6 +757,8 @@ margin-top: 0px;
 @media screen and (max-width: 1366px){
 
     .Header{
+        background-color: #f3e5e4;
+        height: 200px;
         width: 100%;
     }
 
@@ -801,51 +803,6 @@ margin-top: 0px;
         border-radius: 4px;
       
         transition: 1s;
-    }
-
-        .btn_fac{
-        position: absolute;
-        top: 187px;
-        right: 62px;
-        padding: 6px 10px;
-        background-color:#f3e5e4 ;
-        border-radius: 10px;
-        border: none;
-        font-size: 12px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    
-    .btn_fac:hover {
-    
-        border-radius: 10px;
-      
-        background: #d6d3d3;
-      
-        color: #000000;
-      
-        border-radius: 10px;
-      
-        transition: 0.5s;
-        
-    }
-    
-    .btn_fac:not(:hover) {
-    
-        border-radius: 10px;
-      
-        background: #f3e5e4;
-      
-        color: #000000;
-      
-        border-radius: 10px;
-      
-        transition: 1s;
-    }
-    
-    .nav_fac li{
-        list-style:none;
-        
     }
     
     #carousel {
@@ -893,7 +850,7 @@ margin-top: 0px;
         height: 40px; /* Ajuste a altura conforme necessário */
         margin-left: 201px; /* Ajuste o espaçamento conforme necessário */
         margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
-        margin-top: -20px;
+        top: 30px;
         width: 30px;
     }
 
