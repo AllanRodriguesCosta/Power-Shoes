@@ -463,6 +463,25 @@
         
     }
 
+        .barra_quase_transparente1{
+        position: absolute;
+        border-left: 300px solid #ec5a5a; /* Barra quase transparente */
+        height: 2px; /* Ajuste a altura conforme necessário */
+        left: 100px; /* Ajuste o espaçamento conforme necessário */
+        margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
+        top:300px;
+        width: 30px;
+    }
+    
+    .barra_quase_transparente2{
+        position: absolute;
+        border-left: 300px solid #ec5a5a; /* Barra quase transparente */
+        height: 2px; /* Ajuste a altura conforme necessário */
+        right: 60px; /* Ajuste o espaçamento conforme necessário */
+        top: 300px;
+        width: 30px;
+    }
+
     .opcoes_atendimento{
         background-color: #ec5a5a;
         position: absolute;
