@@ -1,0 +1,510 @@
+.Header_cadastro{
+    background-color: #f3e5e4;
+    padding: 38.5px 100px;
+    height: 100px;
+    
+}
+
+.imagem_header_cadastro{
+    top: 21.8px;
+    position: relative;
+    left: 5px;
+    margin-bottom: 0px;
+    width: 22%;
+}
+
+.background_header{
+    background-color: #ec5a5a;
+    width: 100%;
+    height: 60px;
+}
+
+.home_cadastro{
+    top: 201px;
+    left: 59px;
+    position: absolute;
+    background-color:#f3e5e4 ;
+    padding: 3.5px 45px;
+    border-radius: 10px;
+    height: 20px;
+    font-size: 12px;
+    
+}
+
+.home_cadastro:hover {
+
+    border-radius: 10px;
+  
+    background: #d6d3d3;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.home_cadastro:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+
+.home_cadastro ul{
+    list-style: none;
+    color: black;
+    
+}
+
+.home_cadastro li{
+    color: black;
+}
+
+.home_cadastro a{
+    top: 5px;
+    left: 15px;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+}
+
+.btn_fac{
+    position: absolute;
+    top: 200px;
+    right: 62px;
+    padding: 6px 10px;
+    background-color:#f3e5e4 ;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_fac:hover {
+
+    border-radius: 10px;
+  
+    background: #d6d3d3;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_fac:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.nav_fac li{
+    list-style:none;
+    
+}
+
+.central_atendimento{
+    position: absolute;
+    color: #ec5a5a;
+    left: 650px;
+}
+
+.barra_quase_transparente{
+    position: absolute;
+    border-left: 2px solid #3b383836; /* Barra quase transparente */
+    height: 520px; /* Ajuste a altura conforme necessário */
+    left: 890px; /* Ajuste o espaçamento conforme necessário */
+    top: 360px;
+    width: 30px;
+    
+}
+
+
+.barra_quase_transparente1{
+    position: absolute;
+    border-left: 300px solid #ec5a5a; /* Barra quase transparente */
+    height: 2px; /* Ajuste a altura conforme necessário */
+    left: 300px; /* Ajuste o espaçamento conforme necessário */
+    margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
+    top:300px;
+    width: 30px;
+}
+
+.barra_quase_transparente2{
+    position: absolute;
+    border-left: 300px solid #ec5a5a; /* Barra quase transparente */
+    height: 2px; /* Ajuste a altura conforme necessário */
+    right: 320px; /* Ajuste o espaçamento conforme necessário */
+    top: 300px;
+    width: 30px;
+}
+
+.opcoes_atendimento{
+    background-color: #ec5a5a;
+    position: absolute;
+    left: 490px;
+    top: 400px;
+    text-decoration: none;
+    height: 440px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.opcoes_atendimento ul{
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.opcoes_atendimento li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.opcoes_atendimento a{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.fac_opcoes{
+    top: 40px;
+    margin-left: 25px;
+    background-color: #f3e5e4;
+    border-radius: 10px;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.fac_opcoes:hover {
+
+    border-radius: 10px;
+  
+    background: #ff0000;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.fac_opcoes:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.fac_opcoes a{
+    color: #000000;
+}
+
+
+
+.opcoes_atendimento2{
+    border-radius: 5px;
+    background-color: #ec5a5a;
+    position: absolute;
+    left: 990px;
+    top: 400px;
+    text-decoration: none;
+    height: 440px;
+    width: 300px;
+}
+
+.opcoes_atendimento2 ul{
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.opcoes_atendimento2 li{
+    
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.opcoes_atendimento2 a{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.fac_opcoes2{
+    
+    top: 40px;
+    margin-left: 25px;
+    background-color: #f3e5e4;
+    border-radius: 10px;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.fac_opcoes2:hover {
+
+    border-radius: 10px;
+  
+    background: #ff0000;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.fac_opcoes2:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.fac_opcoes2 a{
+    color: #000000;
+}
+
+.footer{
+    position: absolute;
+    background-color:#ec5a5a ;
+    width: 100%;
+    height: 70px;
+    top: 1000px;
+}
+
+@media screen and (max-width: 1366px){
+
+    .central_atendimento{
+        position: absolute;
+        color: #ec5a5a;
+        left: 455px;
+    }
+
+    .barra_quase_transparente{
+        position: absolute;
+        border-left: 2px solid #3b383836; /* Barra quase transparente */
+        height: 520px; /* Ajuste a altura conforme necessário */
+        left: 690px; /* Ajuste o espaçamento conforme necessário */
+        top: 360px;
+        width: 30px;
+        
+    }
+    
+    
+    .barra_quase_transparente1{
+        position: absolute;
+        border-left: 300px solid #ec5a5a; /* Barra quase transparente */
+        height: 2px; /* Ajuste a altura conforme necessário */
+        left: 100px; /* Ajuste o espaçamento conforme necessário */
+        margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
+        top:300px;
+        width: 30px;
+    }
+    
+    .barra_quase_transparente2{
+        position: absolute;
+        border-left: 300px solid #ec5a5a; /* Barra quase transparente */
+        height: 2px; /* Ajuste a altura conforme necessário */
+        right: 60px; /* Ajuste o espaçamento conforme necessário */
+        top: 300px;
+        width: 30px;
+    }
+
+    .opcoes_atendimento{
+        background-color: #ec5a5a;
+        position: absolute;
+        left: 290px;
+        top: 400px;
+        text-decoration: none;
+        height: 440px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    
+    .opcoes_atendimento ul{
+        margin-left: 20px;
+        position: absolute;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    
+    .opcoes_atendimento li{
+        text-decoration: none;
+        list-style: none;
+        
+    }
+    
+    .opcoes_atendimento a{
+        text-decoration: none;
+        list-style: none;
+        
+    }
+    
+    .fac_opcoes{
+        top: 40px;
+        margin-left: 25px;
+        background-color: #f3e5e4;
+        border-radius: 10px;
+        border: none;
+        padding: 4px 10px;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-right: 70px;
+        text-align: center;
+    }
+    
+    .fac_opcoes:hover {
+    
+        border-radius: 10px;
+      
+        background: #ff0000;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .fac_opcoes:not(:hover) {
+    
+        border-radius: 10px;
+      
+        background: #f3e5e4;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .fac_opcoes a{
+        color: #000000;
+    }
+    
+    
+    
+    .opcoes_atendimento2{
+        border-radius: 5px;
+        background-color: #ec5a5a;
+        position: absolute;
+        left: 790px;
+        top: 400px;
+        text-decoration: none;
+        height: 440px;
+        width: 300px;
+    }
+    
+    .opcoes_atendimento2 ul{
+        margin-left: 10px;
+        position: absolute;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    
+    .opcoes_atendimento2 li{
+        
+        text-decoration: none;
+        list-style: none;
+        
+    }
+    
+    .opcoes_atendimento2 a{
+        text-decoration: none;
+        list-style: none;
+        
+    }
+    
+    .fac_opcoes2{
+        
+        top: 40px;
+        margin-left: 25px;
+        background-color: #f3e5e4;
+        border-radius: 10px;
+        border: none;
+        padding: 4px 10px;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-right: 70px;
+        text-align: center;
+    }
+    
+    .fac_opcoes2:hover {
+    
+        border-radius: 10px;
+      
+        background: #ff0000;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .fac_opcoes2:not(:hover) {
+    
+        border-radius: 10px;
+      
+        background: #f3e5e4;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .fac_opcoes2 a{
+        color: #000000;
+    }
+}
