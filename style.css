@@ -762,6 +762,15 @@ margin-top: 0px;
         width: 100%;
     }
 
+        .navegacao{
+        background-color: #ec5a5a;
+        position: absolute;
+        padding: 22px 100px;
+        left: 8px;
+        width: 100%;
+    }
+
+
     #input_buscar{
         margin-left: 370px;
     }
