@@ -427,18 +427,17 @@
     }
 
     .home_cadastro{
-        top: 190px;
-        left: 60px;
+        top: 188px;
+        left: 67px;
         position: absolute;
         background-color:#f3e5e4 ;
-        padding: 2.5px 42px;
+        padding: 3.5px 45px;
         border-radius: 10px;
         height: 20px;
         font-size: 12px;
-        
     }
 
-        .btn_fac{
+    .btn_fac{
         position: absolute;
         top: 187px;
         right: 62px;
