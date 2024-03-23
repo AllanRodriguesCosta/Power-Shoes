@@ -42,14 +42,16 @@ setInterval(function() {
     trocarImagem((index + 1) % images.length);
 }, intervalo);
 
-function limparTexto(elemento) {
-    if (elemento.value === "O que deseja encontrar?") {
-        elemento.value = "";
-    }
-}
+var inputBuscar = document.getElementById('input_buscar');
 
-function restaurarTexto(elemento) {
-    if (elemento.value === "") {
-        elemento.value = "O que deseja encontrar?";
+// Limpar o texto quando o input recebe foco
+inputBuscar.addEventListener('focus', function() {
+    this.value = "";
+});
+
+// Restaurar o texto padrão quando o input perde o foco e está vazio
+inputBuscar.addEventListener('blur', function() {
+    if (this.value === "") {
+        this.value = "O que deseja encontrar?";
     }
-}
+});
