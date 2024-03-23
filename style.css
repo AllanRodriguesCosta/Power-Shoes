@@ -881,19 +881,14 @@ margin-top: 0px;
     }
     
     #carousel {
-        border: 8px solid #ec5a5a;
-        border-radius: 15px;
-        border-style:none;
-        box-shadow: #ec5a5a 8px 8px 5px;
         top: 300px;
-        width: 1300px;
-        height: 600px;
-        position: relative;
+        width: 1100px;
+        height: 450px;
+        position: absolute;
         overflow: hidden;
         margin: auto;
+        margin-left: 150px;
     }
-    
-    
     
     #carousel img {
         width: 100%;
@@ -902,28 +897,6 @@ margin-top: 0px;
         position: absolute;
         top: 0;
         left: 0;
-        cursor: pointer;
-    }
-    
-    #carousel img:hover {
-    
-        transform: scale(1.015);
-    
-        transition: 0.5s;
-        
-    }
-    
-    #carousel img:not(:hover) {
-    
-        border-radius: 10px;
-    
-        background: #f3e5e4;
-    
-        color: #000000;
-    
-        border-radius: 10px;
-    
-        transition: 1s;
     }
     
     #botoes-carousel {
