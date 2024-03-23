@@ -320,6 +320,10 @@
 
 @media screen and (max-width: 1366px){
 
+    .body{
+        margin: 0;
+    }
+
     .Header_cadastro{
         position: absolute;
         top: 0px;
