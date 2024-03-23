@@ -178,6 +178,11 @@
 
 }
 
+#input_buscar:focus {
+    padding-left: 10px;
+    color: #000000; 
+}
+
 .menu_header{
     margin-left: 800px;
 }
