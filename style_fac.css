@@ -320,32 +320,34 @@
 
 @media screen and (max-width: 1366px){
 
-   .Header_cadastro{
+    .Header_cadastro{
+        position: absolute;
+        top: 0px;
         background-color: #f3e5e4;
-        height: 200px;
-        height: 100px;
+        height: 190px;
+        width: 100%;
         
     }
     
     .imagem_header_cadastro{
-        top: 21.8px;
-        position: relative;
-        left: 5px;
+        top: 68px;
+        position: absolute;
+        left: 113px;
         margin-bottom: 0px;
-        width: 23.5%;
+        width: 19.5%;
     }
     
     .background_header{
-        position: absolute;
         background-color: #ec5a5a;
-        width: 100%;
+        position: absolute;
+        top: 185px;
         height: 60px;
-        top: 172px;
+        width: 100%;
     }
 
     .home_cadastro{
-        top: 188px;
-        left: 67px;
+        top: 18px;
+        left: 60px;
         position: absolute;
         background-color:#f3e5e4 ;
         padding: 3.5px 45px;
@@ -403,7 +405,7 @@
 
     .btn_fac{
         position: absolute;
-        top: 188px;
+        top: 200px;
         right: 62px;
         padding: 6px 10px;
         background-color:#f3e5e4 ;
@@ -462,8 +464,9 @@
         width: 30px;
         
     }
-
-        .barra_quase_transparente1{
+    
+    
+    .barra_quase_transparente1{
         position: absolute;
         border-left: 300px solid #ec5a5a; /* Barra quase transparente */
         height: 2px; /* Ajuste a altura conforme necessário */
