@@ -167,9 +167,13 @@
     color: rgb(180, 178, 178);
     border-radius: 5px;
     border-color: #ff000062;
-    width: 400px;
-    height: 35px;
-    left: 700px;
+    height: 40px;
+    left: 708px;
+    font-size: 18px;
+    width: 400px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    box-sizing: border-box; 
 
 
 }
