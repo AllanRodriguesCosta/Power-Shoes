@@ -411,6 +411,11 @@
 }
 
 @media screen and (max-width: 1366px){
+
+    .body{
+        margin: 0;
+    }
+    
     .Header_cadastro{
         background-color: #f3e5e4;
         padding: 32px 100px;
