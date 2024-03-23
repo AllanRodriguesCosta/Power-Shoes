@@ -502,34 +502,92 @@
     }
     
     .Header_cadastro{
+        position: absolute;
+        top: 0px;
         background-color: #f3e5e4;
-        padding: 32px 100px;
-        height: 100px;
+        height: 190px;
+        width: 100%;
         
     }
-
+    
     .imagem_header_cadastro{
-        top: 28px;
-        position: relative;
-        left: 5px;
+        top: 68px;
+        position: absolute;
+        left: 113px;
         margin-bottom: 0px;
-        width: 23.5%;
+        width: 19.5%;
+    }
+    
+    .background_header{
+        background-color: #ec5a5a;
+        position: absolute;
+        top: 185px;
+        height: 60px;
+        width: 100%;
     }
 
     .home_cadastro{
-        top: 188px;
-        left: 67px;
+        top: 18px;
+        left: 60px;
         position: absolute;
         background-color:#f3e5e4 ;
         padding: 3.5px 45px;
         border-radius: 10px;
         height: 20px;
         font-size: 12px;
+        
     }
+    
+    .home_cadastro:hover {
+    
+        border-radius: 10px;
+      
+        background: #d6d3d3;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .home_cadastro:not(:hover) {
+    
+        border-radius: 10px;
+      
+        background: #f3e5e4;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    
+    .home_cadastro ul{
+        list-style: none;
+        color: black;
+        
+    }
+    
+    .home_cadastro li{
+        color: black;
+    }
+    
+    .home_cadastro a{
+        top: 5px;
+        left: 15px;
+        position: absolute;
+        text-decoration: none;
+        color: black;
+    }
+
 
     .btn_fac{
         position: absolute;
-        top: 187px;
+        top: 200px;
         right: 62px;
         padding: 6px 10px;
         background-color:#f3e5e4 ;
@@ -571,6 +629,7 @@
         list-style:none;
         
     }
+    
 
     .form_log_in{
         top: 350px;
@@ -695,9 +754,8 @@
         position: absolute;
         border-left: 2px solid #3b383865; /* Barra quase transparente */
         height: 620px; /* Ajuste a altura conforme necessário */
-        margin-left: 730px; /* Ajuste o espaçamento conforme necessário */
-        margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
-        margin-top: 50px;
+        left: 738px; /* Ajuste o espaçamento conforme necessário */
+        top: 290px;
         width: 30px;
         
     }
@@ -848,4 +906,5 @@
             left: 125px;
             font-size: 25px;
     }
+
 }
