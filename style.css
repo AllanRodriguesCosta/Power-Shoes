@@ -42,13 +42,15 @@
     position: absolute;
     border: none;
     font-size: 20px;
-    padding: 8px 3px 5px 5px; 
     top: 81px;
     left: 1078px;
     background-color: #ec5a5a;
     border-radius: 4px;
     cursor: pointer;
+    
 }
+
+
 
 .btn_buscar:hover {
 
@@ -76,6 +78,8 @@
     border-radius: 4px;
   
     transition: 1s;
+
+    border-bottom: 1px;
 }
 
 
@@ -850,44 +854,48 @@ margin-top: 0px;
 
 
     .btn_buscar{
-        position: absolute;
-        border: none;
-        font-size: 20px;
-        padding: 8px 3px 5px 5px; 
-        top: 81px;
-        left: 1078px;
-        background-color: #ec5a5a;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    top: 81px;
+    left: 1078px;
+    background-color: #ec5a5a;
+    border-radius: 4px;
+    cursor: pointer;
     
-    .btn_buscar:hover {
+}
+
+
+
+.btn_buscar:hover {
+
+    padding: 8px 3px 5px 5px; 
+  
+    background: #ff0000;
+  
+    color: #000000;
+  
+    border-radius: 4px;
+  
+    transition: 0.5s;
     
-        padding: 8px 3px 5px 5px; 
-      
-        background: #ff0000;
-      
-        color: #000000;
-      
-        border-radius: 4px;
-      
-        transition: 0.5s;
-        
-    }
+}
+
+.btn_buscar:not(:hover) {
+
+   
+    padding: 8px 3px 5px 5px; 
     
-    .btn_buscar:not(:hover) {
-    
-       
-        padding: 8px 3px 5px 5px; 
-        
-        background-color: #ec5a5a;
-      
-        color: #000000;
-      
-        border-radius: 4px;
-      
-        transition: 1s;
-    }
+    background-color: #ec5a5a;
+  
+    color: #000000;
+  
+    border-radius: 4px;
+  
+    transition: 1s;
+
+    border-bottom: 1px;
+}
     
     #carousel {
         top: 300px;
