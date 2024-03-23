@@ -1,27 +1,33 @@
+.body{
+    margin: 0;
+}
+
 .Header_cadastro{
     background-color: #f3e5e4;
-    padding: 38.5px 100px;
-    height: 100px;
+
+    height: 190px;
     
 }
 
 .imagem_header_cadastro{
-    top: 21.8px;
-    position: relative;
-    left: 5px;
+    top: 68px;
+    position: absolute;
+    left: 113px;
     margin-bottom: 0px;
-    width: 22%;
+    width: 19.5%;
 }
 
 .background_header{
+    position: absolute;
+    top: 185px;
     background-color: #ec5a5a;
     width: 100%;
     height: 60px;
 }
 
 .home_cadastro{
-    top: 201px;
-    left: 59px;
+    top: 16px;
+    left: 51px;
     position: absolute;
     background-color:#f3e5e4 ;
     padding: 3.5px 45px;
@@ -77,6 +83,85 @@
     color: black;
 }
 
+.btn_menu_header{
+    border: none;
+    border-radius: 50px;
+    padding: 3px 3px 3px 3px;
+    top: 81px;
+    position: absolute;
+    
+    font-size: 28px;
+    right: 180px;
+
+}
+
+.btn_menu_header:hover {
+
+    border-radius: 10px;
+  
+    background: #ff0d00;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_menu_header:not(:hover) {
+
+    border-radius: 10px;
+  
+
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
+.btn_menu_header2{
+    border: none;
+    border-radius: 50px ;
+    padding: 3px 3px 3px 3px;
+    top: 81px;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    right: 100px;
+}
+
+.btn_menu_header2:hover {
+
+    padding: 3px 3px 3px 3px;
+
+    border-radius: 10px;
+  
+    background: #ff0d00;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 0.5s;
+    
+}
+
+.btn_menu_header2:not(:hover) {
+
+    border-radius: 10px;
+  
+
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
+}
+
 .btn_fac{
     position: absolute;
     top: 200px;
@@ -123,6 +208,7 @@
 }
 
 .central_atendimento{
+    top: 260px;
     position: absolute;
     color: #ec5a5a;
     left: 650px;
