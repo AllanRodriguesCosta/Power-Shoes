@@ -151,9 +151,11 @@
     .menu_2{
         position: absolute;
 
-        top: 11px;
+        top: 0px;
 
-        margin-left: 2.5px;
+        left: 1px;
+
+        padding: 17px 68px 22px 55px;
     
         align-items: center;
     
@@ -162,8 +164,6 @@
         margin-top: -10px;
     
         background-color: #f3e5e4;
-    
-        padding: 17px 68px 22px 55px;
 
         border-radius: 10px;
     }
