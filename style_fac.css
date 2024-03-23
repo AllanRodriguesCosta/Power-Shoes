@@ -403,6 +403,7 @@
         color: black;
     }
 
+
     .btn_fac{
         position: absolute;
         top: 200px;
@@ -447,92 +448,254 @@
         list-style:none;
         
     }
+    
 
-    .central_atendimento{
+    .form_log_in{
+        top: 350px;
+        left: 337px;
         position: absolute;
-        color: #ec5a5a;
-        left: 455px;
-        top: 260px;
+        background-color: #ec5a5a;
+        padding: 200px 200px;
+        
+    
+    }
+    
+    .form_itens{
+        position: absolute;
+        left: 110px;
+        top: 100px;
+    }
+    
+    .nome_login{
+        margin-bottom: 5px;
+        background-color:#f3e5e44f ;
+        padding: 0px 9px;
+        margin-right: 180px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .nome_senha{
+        margin-bottom: 5px;
+        margin-top: 15px;
+        background-color:#f3e5e44f ;
+        padding: 0px 9px;
+        margin-right: 180px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .btn_enviar{
+        position: absolute;
+        top: 200px;
+        padding: 8px 10px;
+        left: -20px;
+        background-color: #f3e5e4;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .btn_enviar:hover {
+    
+        border-radius: 10px;
+      
+        background: #d6d3d3;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .btn_enviar:not(:hover) {
+    
+        border-radius: 10px;
+      
+    
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .fgt_senha{
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        top: 210px;
+        left: 100px;
+        font-size: 11px;
+        cursor: pointer;
+        
     }
 
+    .fgt_senha:hover {
+    
+        border-radius: 10px;
+      
+        text-decoration: underline;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .fgt_senha:not(:hover) {
+    
+        border-radius: 10px;
+      
+    
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    
+    .nome_box_login{
+        position: absolute;
+        top: 30px;
+        margin-left: 45px;
+        font-size: 25px;
+    }
+    
     .barra_quase_transparente{
         position: absolute;
-        border-left: 2px solid #3b383836; /* Barra quase transparente */
-        height: 520px; /* Ajuste a altura conforme necessário */
-        left: 690px; /* Ajuste o espaçamento conforme necessário */
-        top: 360px;
+        border-left: 2px solid #3b383865; /* Barra quase transparente */
+        height: 620px; /* Ajuste a altura conforme necessário */
+        left: 738px; /* Ajuste o espaçamento conforme necessário */
+        top: 290px;
         width: 30px;
         
     }
     
+    /* formulario cadastro */
     
-    .barra_quase_transparente1{
+    .form_cadastro{
+        top: 350px;
+        left: 741px;
         position: absolute;
-        border-left: 300px solid #ec5a5a; /* Barra quase transparente */
-        height: 2px; /* Ajuste a altura conforme necessário */
-        left: 100px; /* Ajuste o espaçamento conforme necessário */
-        margin-right: 5px; /* Ajuste o espaçamento conforme necessário */
-        top:300px;
-        width: 30px;
+        background-color: #ec5a5a;
+        padding: 250px 200px;
+    
     }
     
-    .barra_quase_transparente2{
+    .form_tens_cadastro{
         position: absolute;
-        border-left: 300px solid #ec5a5a; /* Barra quase transparente */
-        height: 2px; /* Ajuste a altura conforme necessário */
-        right: 60px; /* Ajuste o espaçamento conforme necessário */
-        top: 300px;
-        width: 30px;
+        left: 110px;
+        top: 100px;
+    }
+    
+    .nome_box_cadastro{
+        position: absolute;
+        top: 30px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        left: 130px;
+    }
+    
+    .nome_cadastro{
+        margin-bottom: 5px;
+        background-color:#f3e5e44f ;
+        padding: 0px 9px;
+        margin-right: 180px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .email_cadastro{
+        margin-bottom: 5px;
+        margin-top: 15px;
+        background-color:#f3e5e44f ;
+        padding: 0px 9px;
+        margin-right: 180px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .nome_senha_cadastro{
+        margin-bottom: 5px;
+        margin-top: 15px;
+        background-color:#f3e5e44f ;
+        padding: 0px 9px;
+        margin-right: 180px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .nome_confirma_senha_cadastro{
+        margin-bottom: 5px;
+        margin-top: 15px;
+        background-color:#f3e5e44f ;
+        padding: 0px 9px;
+        margin-right: 120px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .btn_enviar_cadastro{
+        position: absolute;
+        top: 315px;
+        padding: 8px 10px;
+        left: -10px;
+        background-color: #f3e5e4;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .btn_enviar_cadastro:hover {
+    
+        border-radius: 10px;
+      
+        background: #d6d3d3;
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 0.5s;
+        
+    }
+    
+    .btn_enviar_cadastro:not(:hover) {
+    
+        border-radius: 10px;
+      
+    
+      
+        color: #000000;
+      
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .fgt_senha_cadastro{
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        top: 328px;
+        left: 110px;
+        font-size: 11px;
+        cursor: pointer;
     }
 
-    .opcoes_atendimento{
-        background-color: #ec5a5a;
-        position: absolute;
-        left: 290px;
-        top: 400px;
-        text-decoration: none;
-        height: 440px;
-        width: 300px;
-        border-radius: 5px;
-    }
-    
-    .opcoes_atendimento ul{
-        margin-left: 20px;
-        position: absolute;
-        margin-top: 20px;
-        text-decoration: none;
-    }
-    
-    .opcoes_atendimento li{
-        text-decoration: none;
-        list-style: none;
-        
-    }
-    
-    .opcoes_atendimento a{
-        text-decoration: none;
-        list-style: none;
-        
-    }
-    
-    .fac_opcoes{
-        top: 40px;
-        margin-left: 25px;
-        background-color: #f3e5e4;
-        border-radius: 10px;
-        border: none;
-        padding: 4px 10px;
-        cursor: pointer;
-        margin-top: 40px;
-        margin-right: 70px;
-        text-align: center;
-    }
-    
-    .fac_opcoes:hover {
+    .fgt_senha_cadastro:hover {
     
         border-radius: 10px;
       
-        background: #ff0000;
+        text-decoration: underline;
       
         color: #000000;
       
@@ -542,11 +705,11 @@
         
     }
     
-    .fac_opcoes:not(:hover) {
+    .fgt_senha_cadastro:not(:hover) {
     
         border-radius: 10px;
       
-        background: #f3e5e4;
+    
       
         color: #000000;
       
@@ -555,85 +718,11 @@
         transition: 1s;
     }
     
-    .fac_opcoes a{
-        color: #000000;
-    }
     
-    
-    
-    .opcoes_atendimento2{
-        border-radius: 5px;
-        background-color: #ec5a5a;
+    .nome_box_login{
         position: absolute;
-        left: 790px;
-        top: 400px;
-        text-decoration: none;
-        height: 440px;
-        width: 300px;
-    }
-    
-    .opcoes_atendimento2 ul{
-        margin-left: 10px;
-        position: absolute;
-        margin-top: 20px;
-        text-decoration: none;
-    }
-    
-    .opcoes_atendimento2 li{
-        
-        text-decoration: none;
-        list-style: none;
-        
-    }
-    
-    .opcoes_atendimento2 a{
-        text-decoration: none;
-        list-style: none;
-        
-    }
-    
-    .fac_opcoes2{
-        
-        top: 40px;
-        margin-left: 25px;
-        background-color: #f3e5e4;
-        border-radius: 10px;
-        border: none;
-        padding: 4px 10px;
-        cursor: pointer;
-        margin-top: 40px;
-        margin-right: 70px;
-        text-align: center;
-    }
-    
-    .fac_opcoes2:hover {
-    
-        border-radius: 10px;
-      
-        background: #ff0000;
-      
-        color: #000000;
-      
-        border-radius: 10px;
-      
-        transition: 0.5s;
-        
-    }
-    
-    .fac_opcoes2:not(:hover) {
-    
-        border-radius: 10px;
-      
-        background: #f3e5e4;
-      
-        color: #000000;
-      
-        border-radius: 10px;
-      
-        transition: 1s;
-    }
-    
-    .fac_opcoes2 a{
-        color: #000000;
+            top: 30px;
+            left: 125px;
+            font-size: 25px;
     }
 }
