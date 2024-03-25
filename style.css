@@ -377,13 +377,35 @@
     border: 8px solid #ec5a5a;
     border-radius: 15px;
     border-style:none;
-    box-shadow: #ec5a5a 8px 8px 5px;
+    box-shadow: #ec5a5a60 8px 8px 5px;
     top: 300px;
     width: 1300px;
     height: 600px;
     position: relative;
     overflow: hidden;
     margin: auto;
+}
+
+#carousel:hover {
+    box-shadow: #ec5a5aee 7px 7px 4px;
+
+    transform: scale(1.015);
+  
+    transition: 1s;
+    
+}
+
+#carousel:not(:hover) {
+
+    border-radius: 10px;
+  
+    background: #f3e5e4;
+  
+    color: #000000;
+  
+    border-radius: 10px;
+  
+    transition: 1s;
 }
 
 
