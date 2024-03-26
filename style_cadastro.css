@@ -207,6 +207,132 @@
     
 }
 
+.input_nomes{
+    border: 1px solid black;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+
+
+
+.form_log_in input[type="text"]:focus{
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+.toggleSenha{
+    position: absolute;
+    left: 142px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    background-color: transparent;
+    top: 91px;
+    cursor: pointer;
+    font-size: 13px;
+    height: 20px;
+}
+
+.toggleSenha:hover {
+    border-top-left-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+  
+    text-decoration: underline;
+  
+    color: #000000;
+
+    background-color: #ff0d00;
+  
+    cursor: pointer;
+  
+    transition: 0.2s;
+    
+}
+
+/* Estilize a borda do input normalmente */
+.confirma_senha input[type="password"] {
+    border:1px solid #000000;
+}
+
+#senhaCadastroLogin{
+    border: 1px solid;
+}
+
+
+.toggleSenha1{
+    position: absolute;
+    left: 142px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    background-color: transparent;
+    top: 155px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.toggleSenha1:hover {
+    
+    border-top-left-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+  
+    text-decoration: underline;
+  
+    color: #000000;
+
+    background-color: #ff0d00;
+  
+
+  
+    transition: 0.2s;
+    
+}
+
+#senhaCadastroLogin2{
+    border: 1px solid;
+}
+
+.toggleSenha2{
+    position: absolute;
+    left: 142px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    background-color: transparent;
+    top: 219px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.toggleSenha2:hover {
+    
+    border-top-left-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+  
+    text-decoration: underline;
+  
+    color: #000000;
+
+    background-color: #ff0d00;
+  
+
+  
+    transition: 0.2s;
+    
+}
+
+#senhaCadastroLogin3{
+    border: 1px solid;
+}
+
 /* Formulario log in */
 
 .form_log_in{
@@ -905,6 +1031,132 @@
             top: 30px;
             left: 125px;
             font-size: 25px;
+    }
+
+        .input_nomes{
+        border: 1px solid black;
+    }
+    
+    input:focus{
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+    
+    
+    
+    
+    
+    .form_log_in input[type="text"]:focus{
+        border-radius: 0px;
+        border: 1px solid black;
+    }
+    
+    .toggleSenha{
+        position: absolute;
+        left: 149px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+        background-color: transparent;
+        top: 86px;
+        cursor: pointer;
+        font-size: 13px;
+        height: 20px;
+    }
+    
+    .toggleSenha:hover {
+        border-top-left-radius: 5px;
+    
+        border-bottom-left-radius: 5px;
+      
+        text-decoration: underline;
+      
+        color: #000000;
+    
+        background-color: #ff0d00;
+      
+        cursor: pointer;
+      
+        transition: 0.2s;
+        
+    }
+    
+    /* Estilize a borda do input normalmente */
+    .confirma_senha input[type="password"] {
+        border:1px solid #000000;
+    }
+    
+    #senhaCadastroLogin{
+        border: 1px solid;
+    }
+    
+    
+    .toggleSenha1{
+        position: absolute;
+        left: 149px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+        background-color: transparent;
+        top: 145px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .toggleSenha1:hover {
+        
+        border-top-left-radius: 5px;
+    
+        border-bottom-left-radius: 5px;
+      
+        text-decoration: underline;
+      
+        color: #000000;
+    
+        background-color: #ff0d00;
+      
+    
+      
+        transition: 0.2s;
+        
+    }
+    
+    #senhaCadastroLogin2{
+        border: 1px solid;
+    }
+    
+    .toggleSenha2{
+        position: absolute;
+        left: 149px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+        background-color: transparent;
+        top: 205px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .toggleSenha2:hover {
+        
+        border-top-left-radius: 5px;
+    
+        border-bottom-left-radius: 5px;
+      
+        text-decoration: underline;
+      
+        color: #000000;
+    
+        background-color: #ff0d00;
+      
+    
+      
+        transition: 0.2s;
+        
+    }
+    
+    #senhaCadastroLogin3{
+        border: 1px solid;
     }
 
 }
