@@ -533,7 +533,7 @@ input:focus{
     position: absolute;
     top: 315px;
     padding: 8px 10px;
-    left: -10px;
+    left: 50px;
     background-color: #f3e5e4;
     border: none;
     border-radius: 10px;
@@ -954,7 +954,7 @@ input:focus{
         position: absolute;
         top: 315px;
         padding: 8px 10px;
-        left: -10px;
+        left: 50px;
         background-color: #f3e5e4;
         border: none;
         border-radius: 10px;
