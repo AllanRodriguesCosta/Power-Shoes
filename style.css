@@ -694,7 +694,7 @@ margin-top: 0px;
 }
 
 .menu_nav{
-    height: 400px;
+    height: 100%;
 
     width: 200px;
 
@@ -726,13 +726,13 @@ margin-top: 0px;
 .menu_nav.ativo{
     position: absolute;
 
-    height: 400px;
+    width: 0px;    
 
     opacity: 1;
 
     visibility: visible;
 
-    background-color: #ec5a5a ;
+    background-color: #ec5a5a00 ;
 }
 .menu_nav.ativo:hover { 
   transition: 1s;
@@ -786,7 +786,9 @@ margin-top: 0px;
 
     top: -26px;
 
-    
+    width: 150px;
+
+    height: 370px;
 
     left: -2.5px;
 
@@ -794,13 +796,12 @@ margin-top: 0px;
 
     list-style: none;
 
-    padding: 17px 68px 22px 55px;
-
     background-color: #ec5a5a;
 
     border-radius: 10px;
 
-    height: 378px;
+    
+    
 }
 
 
