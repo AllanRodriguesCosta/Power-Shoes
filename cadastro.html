@@ -48,29 +48,42 @@
         <div class="nome_box_login">LOG IN</div>
         <div class="form_itens">
             <div class="nome_login">E-mail</div>
-            <input type="nome"><br>
-            <div class="nome_senha">Senha</div>
-            <input type="senha"><br>
-            <button class="btn_enviar">ENVIAR</button>
+            <input id="nomeLogin" class="input_nomes" type="nome"><br>
+            <div class="confirma_senha">
+                <div class="nome_senha">Senha</div>
+                <input type="password" id="senhaCadastroLogin">
+                <button class="toggleSenha" data-input-id="senhaCadastroLogin" onclick="togglePasswordVisibility('senhaCadastroLogin')"><ion-icon name="search-outline"></ion-icon></button><br>
+            </div>
+            <button class="btn_enviar" onclick="enviarFormulario()">ENVIAR</button>
             <button class="fgt_senha">Esqueceu sua senha?</button>
         </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <div class="barra_quase_transparente"></div>
     <div class="form_cadastro">
         <div class="nome_box_cadastro">CADASTRO</div>
             <div class="form_tens_cadastro">
                 <div class="nome_cadastro">Nome</div>
-                <input type="nome"><br>
+                <input class="input_nomes" id="nome" type="nome"><br>
                 <div class="email_cadastro">E-mail</div>
-                <input type="email"><br>
-                <div class="nome_senha_cadastro">Senha</div>
-                <input type="senha"><br>
-                <div class="nome_confirma_senha_cadastro">Confirmar Senha</div>
-                <input type="confirma_senha"><br>
-                <button class="btn_enviar_cadastro">ENVIAR</button>
-                <button class="fgt_senha_cadastro">Esqueceu sua senha?</button>
+                <input class="input_nomes" id="email" type="email"><br>
+                <div class="confirma_senha">
+                    <div class="nome_senha_cadastro">Senha</div>
+                    <input type="password" id="senhaCadastroLogin2">
+                    <button class="toggleSenha1" data-input-id="senhaCadastroLogin2" onclick="togglePasswordVisibility('senhaCadastroLogin2')"><ion-icon name="search-outline"></ion-icon></button><br>
+                </div>
+                <div class="confirma_senha">
+                    <div class="nome_confirma_senha_cadastro">Confirmar Senha</div>
+                    <input type="password" id="senhaCadastroLogin3">
+                    <button class="toggleSenha2" data-input-id="senhaCadastroLogin3" onclick="togglePasswordVisibility('senhaCadastroLogin3')"><ion-icon name="search-outline"></ion-icon></button><br>
+                </div>
+                <button class="btn_enviar_cadastro" onclick="validarFormulario()">ENVIAR</button>
             </div>
         </div>
+        <script src="../Site 3 paginas/script_cadastro.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <div class="footer">
         
     </div>
