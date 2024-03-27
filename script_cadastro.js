@@ -65,42 +65,107 @@ toggleButton3.addEventListener('mouseout', function() {
     passwordInput3.style.borderColor = '#000000';
 });
 
+function shakeInput(inputId) {
+    var inputElement = document.getElementById(inputId);
+    inputElement.classList.add("shake");
+    inputElement.style.borderWidth = "2px"; // Define a espessura da borda como 2px durante a animação
+    inputElement.style.borderColor = "#ff0d00"; // Muda a cor da borda para #ff0d00 durante a animação
+
+    setTimeout(function() {
+        inputElement.classList.remove("shake");
+        inputElement.style.borderWidth = ""; // Remove a definição de espessura da borda para voltar ao padrão
+        inputElement.style.borderColor = ""; // Remove a definição de cor da borda para voltar ao padrão
+    }, 1000); // Durante 1 segundo
+}
+
+function exibirMensagemSenha(elemento, mensagem) {
+    var mensagemElemento = elemento.nextElementSibling; // Obtém o próximo elemento do mesmo nível que o botão
+    if (!mensagemElemento || !mensagemElemento.classList.contains('mensagem_senha')) {
+        mensagemElemento = document.createElement('span');
+        mensagemElemento.classList.add('mensagem_senha');
+        elemento.parentNode.insertBefore(mensagemElemento, elemento.nextSibling);
+    }
+    mensagemElemento.textContent = mensagem;
+
+        // Defina um temporizador para remover a mensagem após 3 segundos (3000 milissegundos)
+        setTimeout(function() {
+            if (mensagemElemento && mensagemElemento.parentNode) {
+                mensagemElemento.parentNode.removeChild(mensagemElemento);
+            }
+        }, 3000); // 3 segundos
+    }
+
+function exibirMensagemCampos(elemento2, mensagem2) {
+    var mensagemElemento2 = elemento2.nextElementSibling; // Obtém o próximo elemento do mesmo nível que o botão
+    if (!mensagemElemento2 || !mensagemElemento2.classList.contains('mensagem_preencha_campos')) {
+        mensagemElemento2 = document.createElement('span');
+        mensagemElemento2.classList.add('mensagem_preencha_campos');
+        elemento2.parentNode.insertBefore(mensagemElemento2, elemento2.nextSibling);
+    }
+    mensagemElemento2.textContent = mensagem2;
+
+        // Defina um temporizador para remover a mensagem após 3 segundos (3000 milissegundos)
+        setTimeout(function() {
+            if (mensagemElemento2 && mensagemElemento2.parentNode) {
+                mensagemElemento2.parentNode.removeChild(mensagemElemento2);
+            }
+        }, 3000); // 3 segundos
+    }
+
+function exibirMensagemCamposLogin(elemento3, mensagem3) {
+    var mensagemElemento3 = elemento3.nextElementSibling; // Obtém o próximo elemento do mesmo nível que o botão
+    if (!mensagemElemento3 || !mensagemElemento3.classList.contains('mensagem_preencha_campos_login')) {
+        mensagemElemento3 = document.createElement('span');
+        mensagemElemento3.classList.add('mensagem_preencha_campos_login');
+        elemento3.parentNode.insertBefore(mensagemElemento3, elemento3.nextSibling);
+    }
+    mensagemElemento3.textContent = mensagem3;
+
+        // Defina um temporizador para remover a mensagem após 3 segundos (3000 milissegundos)
+        setTimeout(function() {
+            if (mensagemElemento3 && mensagemElemento3.parentNode) {
+                mensagemElemento3.parentNode.removeChild(mensagemElemento3);
+            }
+        }, 3000); // 3 segundos
+    }
+
+
 function validarFormulario() {
-    // Obtenha os valores dos campos
     var nome = document.getElementById("nome").value;
     var email = document.getElementById("email").value;
     var senha = document.getElementById("senhaCadastroLogin2").value;
     var confirmarSenha = document.getElementById("senhaCadastroLogin3").value;
 
-    // Verifique se algum campo está vazio
     if (nome === "" || email === "" || senha === "" || confirmarSenha === "") {
-        alert("Por favor, preencha todos os campos.");
+        // Adiciona a animação de shake para os campos vazios
+        if (nome === "") shakeInput("nome");
+        if (email === "") shakeInput("email");
+        if (senha === "") shakeInput("senhaCadastroLogin2");
+        if (confirmarSenha === "") shakeInput("senhaCadastroLogin3");
+        exibirMensagemCampos(document.querySelector('.btn_enviar_cadastro'), "Por favor, preencha todos os campos.");
         return;
     }
 
-    // Verifique se as senhas coincidem
     if (senha !== confirmarSenha) {
-        alert("As senhas não coincidem.");
+        shakeInput("senhaCadastroLogin2");
+        shakeInput("senhaCadastroLogin3");
+        exibirMensagemSenha(document.querySelector('.btn_enviar_cadastro'), "As senhas não coincidem.");
         return;
     }
 
-    // Se todos os campos estiverem preenchidos corretamente, envie o formulário
     alert("Formulário enviado com sucesso!");
-    // Aqui você pode adicionar o código para enviar os dados para o servidor
 }
 
 function enviarFormulario() {
-    // Obtenha os valores dos campos
     var nomeLogin = document.getElementById("nomeLogin").value;
     var senhaLogin = document.getElementById("senhaCadastroLogin").value;
 
-    // Verifique se algum campo está vazio
     if (nomeLogin === "" || senhaLogin === "") {
-        alert("Por favor, preencha todos os campos.");
+        if (nomeLogin === "") shakeInput("nomeLogin");
+        if (senhaLogin === "") shakeInput("senhaCadastroLogin");
+        exibirMensagemCamposLogin(document.querySelector('.btn_enviar_cadastro'), "Por favor, preencha todos os campos.");
         return;
     }
 
-    // Se todos os campos estiverem preenchidos corretamente, envie o formulário
     alert("Login efetuado com sucesso!");
-    // Aqui você pode adicionar o código para enviar os dados para o servidor
 }
