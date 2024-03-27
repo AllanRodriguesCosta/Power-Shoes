@@ -516,16 +516,6 @@ input:focus{
     font-size: 25px;
 }
 
-.barra_quase_transparente{
-    position: absolute;
-    border-left: 2px solid #3b383865; /* Barra quase transparente */
-    height: 620px; /* Ajuste a altura conforme necessário */
-    left: 938px; /* Ajuste o espaçamento conforme necessário */
-    right: 5px; /* Ajuste o espaçamento conforme necessário */
-    top: 290px;
-    width: 30px;
-    
-}
 
 /* formulario cadastro */
 
