@@ -1131,8 +1131,6 @@ margin-top: 0px;
 
         left: -3px;
     
-        padding: 17px 68px 22px 55px;
-    
         margin-left: 2.5px;
     
         align-items: center;
@@ -1144,8 +1142,10 @@ margin-top: 0px;
         background-color: #ec5a5a;
     
         border-radius: 10px;
+
+        width: 150px;
     
-        height: 379px;
+        height: 370px;
     }
 
         .menu_nav.ativo{
