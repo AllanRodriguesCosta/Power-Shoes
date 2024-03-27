@@ -1163,6 +1163,28 @@ input:focus{
             font-size: 25px;
     }
 
+        #nomeLogin{
+        padding-left: 5px;
+        color: rgb(180, 178, 178);
+        box-sizing: border-box; 
+    }
+
+    #nomeLogin:focus {
+        padding-left: 5px;
+        color: #000000; 
+    }
+
+    #email{
+        padding-left: 5px;
+        color: rgb(180, 178, 178);
+        box-sizing: border-box; 
+    }
+
+    #email:focus {
+        padding-left: 5px;
+        color: #000000; 
+    }
+
         .input_nomes{
         border: 1px solid black;
     }
