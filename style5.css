@@ -65,9 +65,11 @@
     }
     
     .menu_nav_5{
-        height: 400px;
-    
-        width: 200px;
+        
+
+        width: 150px;
+
+        height: 100%;
     
         position: absolute;
     
@@ -102,12 +104,17 @@
     
         visibility: visible;
     
-        background-color: #f3e5e4 ;
+        width: 0px;
+    
+        background-color: transparent ;
     }
 
     .menu_nav_5.ativo:hover { 
         transition: 1s;
-      
+        
+        width: 150px;
+
+        height: 100%;
     }
       
     .menu_nav_5.ativo:not(:hover){
@@ -151,21 +158,25 @@
     .menu_5{
         position: absolute;
 
-        top: 0px;
-
-        left: 1px;
-
-        padding: 17px 68px 22px 55px;
+        top: -26px;
+    
+        width: 150px;
+    
+        height: 370px;
+    
+        left: -2.5px;
     
         align-items: center;
     
         list-style: none;
     
-        margin-top: -10px;
-    
         background-color: #f3e5e4;
-
+    
         border-radius: 10px;
+    }
+
+    .menu_5 ul{
+        margin: 0;
     }
     
     /* menu_li */
@@ -176,3 +187,4 @@
     
         
     }  
+
