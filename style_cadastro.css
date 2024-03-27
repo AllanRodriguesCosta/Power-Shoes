@@ -685,8 +685,24 @@ input:focus{
 
 @media screen and (max-width: 1366px){
 
-    .body{
+    .body {
         margin: 0;
+        padding: 0;
+        /* overflow: hidden; Remova esta linha */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto; /* Adicione esta linha */
+    }
+
+    .body ul{
+        list-style-type: none;
+    }
+    
+    .form_wrapper {
+        position: relative;
+        width: 600px; /* Largura total dos formulários */
     }
     
     .Header_cadastro{
@@ -819,14 +835,12 @@ input:focus{
     }
     
 
-    .form_log_in{
-        top: 350px;
-        left: 337px;
-        position: absolute;
+    .form_log_in {
+        margin-top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
         background-color: #ec5a5a;
-        padding: 200px 200px;
-        
-    
     }
     
     .form_itens{
@@ -938,31 +952,95 @@ input:focus{
         font-size: 25px;
     }
     
-    .barra_quase_transparente{
-        position: absolute;
-        border-left: 2px solid #3b383865; /* Barra quase transparente */
-        height: 620px; /* Ajuste a altura conforme necessário */
-        left: 738px; /* Ajuste o espaçamento conforme necessário */
-        top: 290px;
-        width: 30px;
-        
-    }
     
     /* formulario cadastro */
-    
-    .form_cadastro{
-        top: 350px;
-        left: 741px;
+
+        .toggle_form_wrapper {
+        display: flex;
+    }
+
+    .toggle_form{
         position: absolute;
-        background-color: #ec5a5a;
-        padding: 250px 200px;
+        background-color: #f3e5e4;
+        color: white;
+        width: 100px;
+        height: 28px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        top: 200px;
+        left: 590px;
+        color: black;
+    }
+
+    .toggle_form:hover {
+        background-color: #ff0d00;
+        transition: 1s;
+    }
+
+    .toggle_form:not(:hover) {
+        background-color: #f3e5e4;
+        transition: 1s;
+        border-radius: 10px;
+    }
     
+    .toggle_form.login.rotated {
+        transform: rotateY(360deg);
+    }
+
+    .toggle_form.login{
+        width: 100%px;
+        z-index: 1;
+    }
+    
+    .toggle_form.cadastro.rotated {
+        transform: rotateY(360deg);
+
+    }
+
+    .toggle_form.cadastro {
+
+    }
+    
+    .button-text {
+        transform: rotateY(0deg); /* Reverte a transformação */
+        transition: transform 0.5s ease; /* Adiciona transição suave */
+        display: inline-block; /* Garante que o texto ocupe o mesmo espaço */
+    }
+
+    .form_log_in,
+    .form_cadastro{
+        position: absolute;
+        margin-top: -20px;
+        background-color: #ec5a5a;
+        transition: transform 0.3s ease;
+    }
+
+    .form_cadastro {
+        left: 50%;
+        transform: translateX(-50%) scale(0.1);
+        z-index: 1;
     }
     
     .form_tens_cadastro{
-        position: absolute;
-        left: 110px;
-        top: 100px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+        .form_cadastro.show {
+        transform: translateX(-50%) scale(1);
+        z-index: 2;
+    }
+    
+    
+    .form_log_in.hide {
+        transform: translateX(-50%) scale(0.5);
+        z-index: 1;
+    }
+    
+    .form_tens_cadastro.show {
+        opacity: 1;
     }
     
     .nome_box_cadastro{
@@ -1219,6 +1297,10 @@ input:focus{
     
     #senhaCadastroLogin3{
         border: 1px solid;
+    }
+
+        .footer {
+        left: 0;
     }
 
 }
