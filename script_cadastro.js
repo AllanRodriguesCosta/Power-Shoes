@@ -281,3 +281,30 @@ toggleButton.addEventListener('click', () => {
     toggleButton.classList.toggle('active');
 });
 
+var inputBuscar = document.getElementById('email');
+
+// Limpar o texto quando o input recebe foco
+inputBuscar.addEventListener('focus', function() {
+    this.value = "";
+});
+
+// Restaurar o texto padrão quando o input perde o foco e está vazio
+inputBuscar.addEventListener('blur', function() {
+    if (this.value === "") {
+        this.value = "user@youmail.com";
+    }
+});
+
+var inputBuscar2 = document.getElementById('nomeLogin');
+
+// Limpar o texto quando o input recebe foco
+inputBuscar2.addEventListener('focus', function() {
+    this.value = "";
+});
+
+// Restaurar o texto padrão quando o input perde o foco e está vazio
+inputBuscar2.addEventListener('blur', function() {
+    if (this.value === "") {
+        this.value = " user@youmail.com";
+    }
+});
