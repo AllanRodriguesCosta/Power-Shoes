@@ -169,3 +169,115 @@ function enviarFormulario() {
 
     alert("Login efetuado com sucesso!");
 }
+
+function toggleForm() {
+    var formLogin = document.querySelector('.form_log_in');
+    var formCadastro = document.querySelector('.form_cadastro');
+    var formItensCadastro = document.querySelector('.form_tens_cadastro');
+    var toggleLoginButton = document.querySelector('.toggle_form.login');
+    var toggleCadastroButton = document.querySelector('.toggle_form.cadastro');
+
+    formLogin.classList.toggle('hide');
+    formCadastro.classList.toggle('show');
+    formItensCadastro.classList.toggle('show');
+    toggleLoginButton.classList.toggle('rotated');
+    toggleCadastroButton.classList.toggle('rotated');
+
+        // Altera o texto do botão ao girar
+        if (toggleLoginButton.classList.contains('rotated')) {
+            toggleLoginButton.innerText = "CADASTRO";
+        } else {
+            toggleLoginButton.innerText = "LOG IN";
+        }
+
+    if (formLogin.classList.contains('hide')) {
+        // Primeira etapa: formulários se movem para os lados e alteram escala
+        formLogin.style.transition = 'transform 0.5s ease-out';
+        formLogin.style.transform = 'translateX(-90%) scale(0.5)';
+        formCadastro.style.transition = 'transform 0.5s ease-out';
+        formCadastro.style.transform = 'translateX(10%) scale(0.5)';
+        // Ajustando z-index
+        formLogin.style.zIndex = '1';
+        formCadastro.style.zIndex = '0';
+        setTimeout(function() {
+            // Segunda etapa: formulários retornam às posições iniciais
+            formLogin.style.transition = 'transform 0.5s ease-out';
+            formLogin.style.transform = 'translateX(-50%) scale(0.2)';
+            formCadastro.style.transition = 'transform 0.5s ease-out';
+            formCadastro.style.transform = 'translateX(-50%) scale(1)';
+            // Ajustando z-index
+            formLogin.style.zIndex = '0';
+            formCadastro.style.zIndex = '1';
+
+            toggleCadastroButton.style.zIndex = '2';
+            toggleLoginButton.style.zIndex = '0';
+        }, 500);
+
+                // Altera o texto do botão de login
+                toggleCadastroButton.querySelector('.button-text').textContent = 'LOGIN';
+            } else {
+                // Altera o texto do botão de login
+                toggleCadastroButton.querySelector('.button-text').textContent = 'CADASTRO';
+            }
+}
+
+function toggleFormLogin() {
+    var formLogin = document.querySelector('.form_log_in');
+    var formCadastro = document.querySelector('.form_cadastro');
+    var formItensCadastro = document.querySelector('.form_tens_cadastro');
+    var toggleLoginButton1 = document.querySelector('.toggle_form.login');
+    var toggleCadastroButton1 = document.querySelector('.toggle_form.cadastro');
+
+    formLogin.classList.toggle('hide');
+    formCadastro.classList.toggle('show');
+    formItensCadastro.classList.toggle('show');
+    toggleLoginButton1.classList.toggle('rotated');
+    toggleCadastroButton1.classList.toggle('rotated');
+
+    
+
+        // Altera o texto do botão ao girar
+        if (toggleLoginButton1.classList.contains('rotated')) {
+            toggleLoginButton1.innerText = "LOGIN";
+        } else {
+            toggleLoginButton1.innerText = "CADASTRO";
+        }
+
+    if (!formLogin.classList.contains('hide')) {
+        // Primeira etapa: formulários se movem para os lados e alteram escala
+        formLogin.style.transition = 'transform 0.5s ease-out';
+        formLogin.style.transform = 'translateX(10%) scale(0.5)';
+        formCadastro.style.transition = 'transform 0.5s ease-out';
+        formCadastro.style.transform = 'translateX(-90%) scale(0.5)';
+        // Ajustando z-index
+        formLogin.style.zIndex = '0';
+        formCadastro.style.zIndex = '1';
+
+        // Segunda etapa: formulários retornam às posições iniciais após 500ms
+        setTimeout(function() {
+            formLogin.style.transform = 'translateX(-50%) scale(1)';
+            formCadastro.style.transform = 'translateX(-50%) scale(0.2)';
+            // Ajustando z-index
+            formLogin.style.zIndex = '1';
+            formCadastro.style.zIndex = '0';
+
+            toggleCadastroButton1.style.zIndex = '0';
+            toggleLoginButton1.style.zIndex = '2'; 
+        }, 500);
+
+                // Altera o texto do botão de login
+                toggleCadastroButton1.querySelector('.button-text').textContent = 'CADASTRO';
+            } else {
+                // Altera o texto do botão de login
+                toggleCadastroButton1.querySelector('.button-text').textContent = 'LOGIN';
+            }
+        
+    
+}
+
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', () => {
+    toggleButton.classList.toggle('active');
+});
+
