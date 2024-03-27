@@ -64,9 +64,7 @@
         background-color:#ec5a5a54 ;
     }
     
-    .menu_nav_5{
-        
-
+    .menu_nav_4{
         width: 150px;
 
         height: 100%;
@@ -96,7 +94,7 @@
         visibility: hidden;
     }
     
-    .menu_nav_5.ativo{
+    .menu_nav_4.ativo{
 
         margin-left: 185px;
 
@@ -109,34 +107,31 @@
         background-color: transparent ;
     }
 
-    .menu_nav_5.ativo:hover { 
+    .menu_nav_4.ativo:hover { 
         transition: 1s;
-        
-        width: 150px;
-
-        height: 100%;
+      
     }
       
-    .menu_nav_5.ativo:not(:hover){
+    .menu_nav_4.ativo:not(:hover){
       
         transition: 1s;
     }
     
-    .menu_nav_5:hover { 
+    .menu_nav_4:hover { 
         transition: 1s;
     }
     
-    .menu_nav_5:not(:hover){
+    .menu_nav_4:not(:hover){
         transition: 1s;
      
     }
     
-    .menu_nav_5 .menu_2{
+    .menu_nav_4 .menu_2{
       user-select: none;
     
     }
     
-    .menu_nav_5 .menu_2 ul{
+    .menu_nav_4 .menu_2 ul{
       top: 80px;
     
       display: flex;
@@ -149,13 +144,13 @@
     }
     
     /* menu_toggle */
-    .menu_nav_5 .menuToggle_2{  
+    .menu_nav_4 .menuToggle_2{  
       position: relative;
       
       background-color: #000000;
     }
     
-    .menu_5{
+    .menu_4{
         position: absolute;
 
         top: -26px;
@@ -174,13 +169,9 @@
     
         border-radius: 10px;
     }
-
-    .menu_5 ul{
-        margin: 0;
-    }
     
     /* menu_li */
-    .menu_li_5{
+    .menu_li_4{
         margin-bottom: -5px;
     
         font-size: 40px;
