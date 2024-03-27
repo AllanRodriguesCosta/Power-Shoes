@@ -1,3 +1,51 @@
+.mensagem_preencha_campos {
+    position: absolute;
+    top: 250px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    left: -30px;
+}
+
+.mensagem_preencha_campos:active {
+    background-color: #ffffff;
+}
+
+.mensagem_preencha_campos_login {
+    position: absolute;
+    top: 140px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    left: -435px;
+}
+
+.mensagem_preencha_campos_login:active {
+    background-color: #ffffff;
+}
+
+.mensagem_senha {
+    position: absolute;
+    top: 250px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    left: 0px;
+}
+
+.mensagem_senha:active {
+    background-color: #ffffff;
+}
+
 .body{
     margin: 0;
 }
