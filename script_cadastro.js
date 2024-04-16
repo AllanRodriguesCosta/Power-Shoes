@@ -121,11 +121,15 @@ function exibirMensagemCamposLogin(elemento3, mensagem3) {
     }
     mensagemElemento3.textContent = mensagem3;
 
+    mensagemElemento3.style.position = 'absolute';
+
+
+
         // Defina um temporizador para remover a mensagem após 3 segundos (3000 milissegundos)
         setTimeout(function() {
             if (mensagemElemento3 && mensagemElemento3.parentNode) {
                 mensagemElemento3.parentNode.removeChild(mensagemElemento3);
-            }
+            }   
         }, 3000); // 3 segundos
     }
 
@@ -139,7 +143,7 @@ function validarFormulario() {
     if (nome === "" || email === "" || senha === "" || confirmarSenha === "") {
         // Adiciona a animação de shake para os campos vazios
         if (nome === "") shakeInput("nome");
-        if (email === "") shakeInput("email");
+        if (email === "" || email === "user@youmail.com") shakeInput("email");
         if (senha === "") shakeInput("senhaCadastroLogin2");
         if (confirmarSenha === "") shakeInput("senhaCadastroLogin3");
         exibirMensagemCampos(document.querySelector('.btn_enviar_cadastro'), "Por favor, preencha todos os campos.");
@@ -161,9 +165,9 @@ function enviarFormulario() {
     var senhaLogin = document.getElementById("senhaCadastroLogin").value;
 
     if (nomeLogin === "" || senhaLogin === "") {
-        if (nomeLogin === "") shakeInput("nomeLogin");
+        if (nomeLogin === "" || nomeLogin === "user@youmail.com") shakeInput("nomeLogin");
         if (senhaLogin === "") shakeInput("senhaCadastroLogin");
-        exibirMensagemCamposLogin(document.querySelector('.btn_enviar_cadastro'), "Por favor, preencha todos os campos.");
+        exibirMensagemCamposLogin(document.querySelector('.btn_enviar'), "Por favor, preencha todos os campos.");
         return;
     }
 
@@ -193,18 +197,18 @@ function toggleForm() {
     if (formLogin.classList.contains('hide')) {
         // Primeira etapa: formulários se movem para os lados e alteram escala
         formLogin.style.transition = 'transform 0.5s ease-out';
-        formLogin.style.transform = 'translateX(-90%) scale(0.5)';
+        formLogin.style.transform = 'translateX(-50%) scale(0.5)';
         formCadastro.style.transition = 'transform 0.5s ease-out';
-        formCadastro.style.transform = 'translateX(10%) scale(0.5)';
+        formCadastro.style.transform = 'translateX(50%) scale(0.5)';
         // Ajustando z-index
         formLogin.style.zIndex = '1';
         formCadastro.style.zIndex = '0';
         setTimeout(function() {
             // Segunda etapa: formulários retornam às posições iniciais
             formLogin.style.transition = 'transform 0.5s ease-out';
-            formLogin.style.transform = 'translateX(-50%) scale(0.2)';
+            formLogin.style.transform = ' translateX(0%) scale(0.2)';
             formCadastro.style.transition = 'transform 0.5s ease-out';
-            formCadastro.style.transform = 'translateX(-50%) scale(1)';
+            formCadastro.style.transform = 'translateX(0%) scale(1)';
             // Ajustando z-index
             formLogin.style.zIndex = '0';
             formCadastro.style.zIndex = '1';
@@ -246,17 +250,17 @@ function toggleFormLogin() {
     if (!formLogin.classList.contains('hide')) {
         // Primeira etapa: formulários se movem para os lados e alteram escala
         formLogin.style.transition = 'transform 0.5s ease-out';
-        formLogin.style.transform = 'translateX(10%) scale(0.5)';
+        formLogin.style.transform = 'translateX(50%) scale(0.5)';
         formCadastro.style.transition = 'transform 0.5s ease-out';
-        formCadastro.style.transform = 'translateX(-90%) scale(0.5)';
+        formCadastro.style.transform = 'translateX(-50%) scale(0.5)';
         // Ajustando z-index
         formLogin.style.zIndex = '0';
         formCadastro.style.zIndex = '1';
 
         // Segunda etapa: formulários retornam às posições iniciais após 500ms
         setTimeout(function() {
-            formLogin.style.transform = 'translateX(-50%) scale(1)';
-            formCadastro.style.transform = 'translateX(-50%) scale(0.2)';
+            formLogin.style.transform = 'translateX(0%) scale(1)';
+            formCadastro.style.transform = 'translateX(0%) scale(0.2)';
             // Ajustando z-index
             formLogin.style.zIndex = '1';
             formCadastro.style.zIndex = '0';
@@ -285,7 +289,9 @@ var inputBuscar = document.getElementById('email');
 
 // Limpar o texto quando o input recebe foco
 inputBuscar.addEventListener('focus', function() {
-    this.value = "";
+    if (this.value === "user@youmail.com") {
+        this.value = "";
+    }
 });
 
 // Restaurar o texto padrão quando o input perde o foco e está vazio
@@ -299,12 +305,14 @@ var inputBuscar2 = document.getElementById('nomeLogin');
 
 // Limpar o texto quando o input recebe foco
 inputBuscar2.addEventListener('focus', function() {
-    this.value = "";
+    if (this.value === "user@youmail.com") {
+        this.value = "";
+    }
 });
 
 // Restaurar o texto padrão quando o input perde o foco e está vazio
 inputBuscar2.addEventListener('blur', function() {
     if (this.value === "") {
-        this.value = " user@youmail.com";
+        this.value = "user@youmail.com";
     }
 });
